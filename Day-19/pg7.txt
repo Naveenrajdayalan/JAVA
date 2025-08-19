@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class LabAllocation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        int x = sc.nextInt(); // Capacity of L1
+        int y = sc.nextInt(); // Capacity of L2
+        int z = sc.nextInt(); // Capacity of L3
+        int n = sc.nextInt(); // Number of students
+
+        
+        int bestFit = Integer.MAX_VALUE;
+        String selectedLab = "";
+
+        
+        if (x >= n && x - n < bestFit) {
+            bestFit = x - n;
+            selectedLab = "L1";
+        }
+        if (y >= n && y - n < bestFit) {
+            bestFit = y - n;
+            selectedLab = "L2";
+        }
+        if (z >= n && z - n < bestFit) {
+            bestFit = z - n;
+            selectedLab = "L3";
+        }
+
+        
+        System.out.println(selectedLab);
+
+        sc.close();
+    }
+}
