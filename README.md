@@ -32,14 +32,3 @@ Generics
 
 File I/O and Serialization
 
-Features
-
-Well-structured notes for easy understanding
-
-Code examples for each concept
-
-Useful tips and best practices
-
-Designed for both learning and quick revision
-
-This repo is ideal for students, Java enthusiasts, or anyone preparing for interviews and wanting a solid grasp of Java and OOP fundamentals.
